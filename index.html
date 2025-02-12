@@ -579,7 +579,85 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <label class="footer-subscribe-label"
+            >Subscribe
+            <input
+              class="footer-subscribe-input"
+              type="email"
+              placeholder="E-mail"
+            />
+          </label>
+          <button class="button subscribe-button" type="submit">
+            Subscribe
+            <svg
+              class="send-icon"
+              width="24"
+              height="20"
+              viewBox="0 0 24 20"
+              fill="none"
+            >
+              <use href="./images/icons.svg#send-icon"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
+    <div class="modal-overlay">
+      <div class="modal">
+        <a href="" class="link close-link"
+          ><svg width="24" height="24" viewBox="0 0 64 64">
+            <use href="./images/icons.svg#close"></use></svg
+        ></a>
+        <h3 class="modal-header">
+          Leave your contacts and we will call you back
+        </h3>
+        <ul class="modal-list">
+          <li class="modal-list-item">
+            <label class="modal-label"
+              >Name
+              <input class="modal-input" type="text" />
+              <svg
+                class="form-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <use href="./images/icons.svg#phone-icon"></use></svg
+            ></label>
+          </li>
+          <li class="modal-list-item">
+            <label class="modal-label"
+              >Phone <input class="modal-input" type="tel"
+            /></label>
+          </li>
+          <li class="modal-list-item">
+            <label class="modal-label"
+              >Email <input class="modal-input" type="email"
+            /></label>
+          </li>
+          <li class="modal-list-item">
+            <label class="modal-label"
+              >Comment
+              <textarea
+                class="modal-input"
+                name="comment"
+                rows="5"
+                placeholder="Text input"
+              ></textarea>
+            </label>
+          </li>
+        </ul>
+        <label class="modal-checkbox">
+          <input class="modal-checkbox-input" type="checkbox" />
+          <p>
+            I accept the terms and conditions of the
+            <span><a href="" class="modal-link">Privacy policy</a></span>
+          </p>
+        </label>
+        <button class="modal-button" type="submit">Send</button>
+      </div>
+    </div>
   </body>
 </html>
