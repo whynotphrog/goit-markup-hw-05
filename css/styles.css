@@ -557,6 +557,14 @@ display: flex;
     background-color: #31d0aa;
 }
 
+.form-text {
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #fff;
+}
+
 .footer-subscribe {
     display: flex;
     justify-content: center;
@@ -568,11 +576,6 @@ display: flex;
 .footer-subscribe-label {
     display: flex;
     flex-direction: column;
-    font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #fff;
         gap: 16px;
 }
 
