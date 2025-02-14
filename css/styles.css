@@ -603,10 +603,10 @@ display: flex;
         font-size: 12px;
         line-height: 2;
         letter-spacing: 0.04em;
-
+        color: #ffffff;
 }
 
-::placeholder {
+.footer-subscribe-input::placeholder {
     color: #ffffff;
 }
 
