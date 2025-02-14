@@ -592,7 +592,7 @@ display: flex;
 }
 
 .footer-subscribe-input {
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
         border-radius: 4px;
         width: 264px;
         height: 40px;
@@ -606,7 +606,7 @@ display: flex;
 
 }
 
-.footer-subscribe-input::placeholder {
+::placeholder {
     color: #ffffff;
 }
 
