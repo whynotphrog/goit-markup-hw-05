@@ -41,7 +41,7 @@ img {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.01em;
     color: #434455;
 }
 
@@ -697,11 +697,15 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
 .modal-close-button:focus {
     background-color: #404bbf;
     border: none;
-    fill: #ffffff;
 }
 
 .close-button-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-button:hover > .close-button-icon,
+.modal-close-button:focus > .close-button-icon {
+    fill: #ffffff;
 }
 
 .modal-header {
@@ -712,6 +716,11 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 16px;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column; 
 }
 
 .modal-input-container {
@@ -756,7 +765,7 @@ color: #8e8f99;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);    
 }
 
-.modal-input:focus+.form-icon {
+.modal-input:focus + .form-icon {
     fill: #4d5ae5;
 }
 
@@ -785,8 +794,10 @@ color: #8e8f99;
     margin-right: 8px;
 }
 
-.modal-button {
+.send-button {
     display: block;
+    align-self: center;
+    margin-top: 0;
     min-width: 169px;
     height: 56px;
     border: none;
@@ -845,6 +856,12 @@ textarea::placeholder {
     color: #8e8f99;
 }
 
+.form-checkbox-input:checked + .form-checkbox-label > .checkbox-span {
+background-color: #404BBF;
+    border: none;
+    fill: #F4F4FD;
+}
+
 .checkbox-span {
     width: 16px;
     height: 16px;
@@ -855,12 +872,9 @@ textarea::placeholder {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    margin-right: 8px;
 }
 
 .link-privacy {
     color: #4d5ae5;
-}
-
-.send-button {
-    margin-top: 0;
 }
